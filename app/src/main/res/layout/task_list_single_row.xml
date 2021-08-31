@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:elevation="15dp"
+    app:cardCornerRadius="10dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+    <LinearLayout
+        android:background="@drawable/task_list_card_view_border"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/black"
+            android:background="@drawable/task_list_card_view_upper_edit_text"
+            android:id="@+id/et_task_name"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Name"
+            />
+        <TextView
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/robotolight"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/task_list_card_view_lower_edit_text"
+            android:id="@+id/et_task_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="task"
+
+            />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>

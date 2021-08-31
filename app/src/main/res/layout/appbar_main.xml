@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar_main"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_center_activity"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                >
+                <TextView
+                    android:id="@+id/tv_center_activity_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:layout_below="@+id/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/center_activity_content"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/fab_create_board"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/mehroon"
+        app:rippleColor="@color/nearly_white"
+        android:src="@drawable/add_board"
+        android:contentDescription="@string/add_new_board" />
+
+</RelativeLayout>
