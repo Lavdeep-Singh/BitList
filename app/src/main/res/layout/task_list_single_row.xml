@@ -25,6 +25,11 @@
             android:layout_height="wrap_content"
             android:hint="Task Name"
             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/yellow_primary"
+            />
         <TextView
             android:inputType="textMultiLine"
             android:textColor="@color/black"

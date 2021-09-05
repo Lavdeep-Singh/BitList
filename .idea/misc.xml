@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/drawable/task_list_card_view_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/activity_center.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/activity_create_board.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/activity_create_new_task.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/appbar_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/board_single_row.xml" value="0.4" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/single_member_photo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/layout/task_list_single_row.xml" value="0.4" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/BitList/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.171875" />
       </map>
     </option>

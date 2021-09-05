@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import com.example.bitlist.Constants
 import com.example.bitlist.activity.*
+import com.example.bitlist.adapters.BoardMembersPhotosAdapter
 import com.example.bitlist.fragments.SignUpTabFragment
 import com.example.bitlist.models.Board
 import com.example.bitlist.models.Task
@@ -16,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 
 class FireStoreClass {
-    private val mFirestore= FirebaseFirestore.getInstance() //instance of firestore
+    private val mFirestore= FirebaseFirestore.getInstance() //instance of fire store
     //function to get uuid of current logged in user
     fun getCurrentUserId():String{
         var currentUser= FirebaseAuth.getInstance().currentUser
@@ -188,6 +189,7 @@ class FireStoreClass {
                     activity.setUpAdapter(userList)
                     activity.mMembers=userList
                 }
+
             }.addOnFailureListener {
                     e->
                 if(activity is AddDeleteMembersFromBoard){
@@ -197,6 +199,7 @@ class FireStoreClass {
 
             }
     }
+
 
     //get details about the user from email
     fun getMemberDetails(activity: AddDeleteMembersFromBoard,email:String){

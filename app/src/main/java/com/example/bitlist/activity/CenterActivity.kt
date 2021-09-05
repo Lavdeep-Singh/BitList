@@ -47,6 +47,7 @@ class CenterActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedLi
             board1.priority.compareTo(board2.priority)
         }
     }
+
     private lateinit var mBoardList:ArrayList<Board>
     private lateinit var mUserName:String
     override fun onCreate(savedInstanceState: Bundle?) {
