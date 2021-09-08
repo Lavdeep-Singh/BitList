@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.bitlist.R
 import com.example.bitlist.activity.CenterActivity
+import com.example.bitlist.activity.ForgetPasswordActivity
 import com.example.bitlist.activity.SignInActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_sign_in_tab.*
@@ -31,6 +32,12 @@ class SignInTabFragment : Fragment() {
         auth=FirebaseAuth.getInstance() //instance of fire base authenticator
         btn_sign_in.setOnClickListener {
             signInRegisteredUser()
+        }
+        tv_forget_password.setOnClickListener {
+            activity?.let{
+                val intent = Intent (it, ForgetPasswordActivity::class.java)
+                it.startActivity(intent)
+            }
         }
     }
 

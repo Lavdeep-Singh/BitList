@@ -33,6 +33,8 @@
     <string name="description">Description</string>
     <string name="title">Title</string>
     <string name="member_image">member image</string>
+    <string name="pass_reset_tv">Please enter your email address , we will send you an email to reset your password</string>
+    <string name="images_in_the_task">Images in the task</string>
 
 
     <string-array name="Priority">

@@ -12,6 +12,7 @@ import com.example.bitlist.fragments.SignInTabFragment
 import com.example.bitlist.fragments.SignUpTabFragment
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*
+import kotlinx.android.synthetic.main.fragment_sign_in_tab.*
 import kotlinx.android.synthetic.main.fragment_sign_up_tab.*
 
 class SignInActivity : BaseActivity() {
@@ -19,8 +20,10 @@ class SignInActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
-
         setUpTab()
+        //tv_forget_password.setOnClickListener {
+        //         supportFragmentManager.beginTransaction().replace(R.id.view_pager,FragmentForgetPassword()).commit()
+       // }
 
     }
 
