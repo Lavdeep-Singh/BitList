@@ -73,6 +73,8 @@ class CreateNewTaskActivity : BaseActivity() {
             btn_create_new_task_list.text = resources.getString(R.string.update)
             et_new_task_list_title.setText(mTaskDetails.title)
             et_new_task_list_description.setText(mTaskDetails.description)
+            tv_new_task_list_toolbar_title.setText("Update task")
+            //et_new_task_list_title.visibility=View.GONE
             mTaskImages=mTaskDetails.taskImages
             if(mTaskImages.size>0){
                for(i in mTaskImages){

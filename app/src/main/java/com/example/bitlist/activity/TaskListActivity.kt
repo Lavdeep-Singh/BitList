@@ -9,6 +9,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.bitlist.Constants
 import com.example.bitlist.Firestore.FireStoreClass
 import com.example.bitlist.R
@@ -89,7 +90,7 @@ class TaskListActivity : BaseActivity() {
         if(board.taskList.size>0){
             tv_nothing_here.visibility=View.GONE
             rv_task_list.visibility=View.VISIBLE
-            rv_task_list.layoutManager= GridLayoutManager(this,2)
+            rv_task_list.layoutManager= StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
             rv_task_list.setHasFixedSize(true)
             val taskList=board.taskList
             val adapter= TaskListAdapter(this,taskList)
